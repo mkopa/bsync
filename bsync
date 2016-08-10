@@ -313,7 +313,7 @@ def ignorepath(path, ignoreset):
 		return True
 	else:
 		for ignore in ignoreset:
-			if (path+b"/").startswith(ignore.encode()):
+			if ignore in str(path):
 				return True
 	return False
 
